@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-root 'pages#landing_page'
+  devise_for :users
+root 'pages#index'
+
+get '/second_page' => 'pages#second_page'
 
 
 end
