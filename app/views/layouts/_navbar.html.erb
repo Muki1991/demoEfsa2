@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">RoR Demo</a>
+  <a class="navbar-brand"> <%= link_to 'RoR Demo', index_path %></a>
   <% if current_user %>
   <a class="navbar-brand" href="#">Welcome <%= current_user.email %> </a>
   <% end %>

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       get '/users/sign_out' => 'devise/sessions#destroy'     
    end
 
-root 'pages#index'
+root 'pages#index', as: 'index'
 
 get '/second_page' => 'pages#second_page'
 
